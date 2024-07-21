@@ -40,7 +40,9 @@ for time_index = time_index_vector
 
         % Level 4.2: Initialize State Value with 0 initial value
         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('state_value') = 0;
-
+    
+        % Level 4.3: Initialize Action Value Vector
+        MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('action_value_vector')  = {};
         end
     end
 end
@@ -134,9 +136,9 @@ for time_index = time_index_vector
                 end    
             end
 
-            % If success but returning to current state: Reward = -50
+            % If success but returning to current state: Reward = -10
             if next_state == state_index
-                MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = -50;
+                MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = -10;
             end
 
         end

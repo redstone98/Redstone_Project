@@ -28,12 +28,12 @@ for time_index = inverse_time_index
             s_f = MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('fail').('next_state');
             v_s_s = MDP.(['time' num2str(time_index+1)]).(['state' num2str(s_s)]).('state_value');
             v_s_f = MDP.(['time' num2str(time_index+1)]).(['state' num2str(s_f)]).('state_value');
-
-
             q_s_a = T_s * (r_s + gamma* v_s_s) + T_f * (r_f + gamma* v_s_f);
             MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('action_value') = q_s_a;
             action_value_collector(action_index) = q_s_a;
         end
+
+        MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('action_value_vector')  = action_value_collector;
         state_value = max(action_value_collector);
         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('state_value') = state_value;
 

@@ -17,6 +17,8 @@ time_list(1) = time_index(1);
 
 for t = 1:simulation_time
     current_state = state_list(t);
+
+    
     state_value_list(t) = MDP.(['time' num2str(time_index(t))]).(['state' num2str(current_state)]).('state_value');
 
     if current_state == destination_state

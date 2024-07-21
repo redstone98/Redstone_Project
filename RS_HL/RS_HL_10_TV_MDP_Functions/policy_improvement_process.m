@@ -23,6 +23,9 @@ pi_distribution_updated = zeros(number_of_states);
         action_value_vector(action_index) = MDP.(['time' num2str(t_n)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('action_value');
         end
     
+        % Level 4.3: Change Action Value Vector
+        MDP.(['time' num2str(t_n)]).(['state' num2str(state_index)]).('action_value_vector')  = action_value_vector;
+
         maximum_action_value = max(action_value_vector);
         argmax_a = find(action_value_vector == maximum_action_value);
         for action_index = 1:number_of_actions
