@@ -136,9 +136,9 @@ for time_index = time_index_vector
                 end    
             end
 
-            % If success but returning to current state: Reward = -10
+            % If success but returning to current state: Reward = -5
             if next_state == state_index
-                MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = -10;
+                MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = -5;
             end
 
         end

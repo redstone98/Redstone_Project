@@ -53,7 +53,7 @@ for time_index = time_index_vector
 
                 if current_state > 23
                     if next_state > 23
-                        MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = 100;
+                        MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = 75;
                     end
                     if next_state < 25
                         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('reward') = 50;
