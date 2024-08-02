@@ -43,6 +43,10 @@ for time_index = time_index_vector
     
         % Level 4.3: Initialize Action Value Vector
         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('action_value_vector')  = {};
+
+        % Level 4.4: Initialize Next State Vector
+        MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).('next_state_vector')  = next_state_candidates';
+
         end
     end
 end
