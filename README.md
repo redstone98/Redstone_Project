@@ -58,26 +58,26 @@
 
 **\[Configuration of Constellation Scenario\]**
 
--  Orbit Design and Satellite Allocation \[RS\-HL\-1\]: Designing the satellite orbits and allocating satellites to specific orbits using keplerian 6 elements and SGP4 orbit propagator.   
--  Ground Stations Configuration \[RS\-HL\-1\]: Setting up and configuring ground stations (Latitude, Longitude and Altitude) to communicate with the satellite constellation for data transmission and control. 
--  Generate Contact 3D Chart Genration \[RS\-HL\-2\]: Creating a three\-dimensional chart to visualize and analyze contact points and times between satellites and ground stations. 
--  Network Graph Generation \[RS\-HL\-3\]:  Developing a network graph to represent the connections and communication links between different satellites and ground stations. 
--  Analysis of the Contact \[RS\-HL\-6\]: Evaluating the contact data to understand the contact patterns especially oscillating number of available satellite / ground station of communication.   
+-  **Orbit Design and Satellite Allocation \[RS\-HL\-1\]**: Designing the satellite orbits and allocating satellites to specific orbits using keplerian 6 elements and SGP4 orbit propagator.   
+-  **Ground Stations Configuration \[RS\-HL\-1\]**: Setting up and configuring ground stations (Latitude, Longitude and Altitude) to communicate with the satellite constellation for data transmission and control. 
+-  **Generate Contact 3D Chart Genration \[RS\-HL\-2\]**: Creating a three\-dimensional chart to visualize and analyze contact points and times between satellites and ground stations. 
+-  **Network Graph Generation \[RS\-HL\-3\]**:  Developing a network graph to represent the connections and communication links between different satellites and ground stations. 
+-  **Analysis of the Contact \[RS\-HL\-6\]**: Evaluating the contact data to understand the contact patterns especially oscillating number of available satellite / ground station of communication.   
 
 **\[Network routing algorithm designed by MDP\]**
 
--  MDP simulation using matlab `createMDP` function \[RS\-HL\-4\]: Simulation of the Markov Decision Process (MDP) using MATLAB's createMDP function to model and solve decision\-making problems. 
--  MDP\-DP algorithm description \[RS\-HL\-5\]: Description the MDP\-Dynamic Programming (DP) algorithm used for optimizing decision\-making processes in the satellite network. 
--  MDP\-DP algorithm analysis \[RS\-HL\-7\]: Analysis the performance and results of the MDP\-DP algorithm to assess its effectiveness in network routing. The change of state value function is described. 
--  Time Varying MDP algorithm description \[RS\-HL\-9\]: Description the algorithm that accounts for time\-varying changes in the MDP model. 
--  Time Varying MDP functions \[RS\-HL\-10\]: Functions created from previous analysis for future application. 
+-   **MDP simulation using matlab** **`createMDP`** **function \[RS\-HL\-4\]** : Simulation of the Markov Decision Process (MDP) using MATLAB's createMDP function to model and solve decision\-making problems. 
+-  **MDP\-DP algorithm description \[RS\-HL\-5\]**: Description the MDP\-Dynamic Programming (DP) algorithm used for optimizing decision\-making processes in the satellite network. 
+-  **MDP\-DP algorithm analysis \[RS\-HL\-7\]**: Analysis the performance and results of the MDP\-DP algorithm to assess its effectiveness in network routing. The change of state value function is described. 
+-  **Time Varying MDP algorithm description \[RS\-HL\-9\]**: Description the algorithm that accounts for time\-varying changes in the MDP model. 
+-  **Time Varying MDP functions \[RS\-HL\-10\]**: Functions created from previous analysis for future application. 
 
 **\[Multi\-Agent Collision Avoidance Algorithm\]**
 
--  Default Setting Sim \[RS\-HL\-13\]: Running simulations with default settings to test the basic functionality of the multi\-agent data packet routing algorithm. 
--  Seqential Algorithm \[RS\-HL\-11\]: Implementation of a sequential algorithm where agents make decisions one after another to avoid collisions. 
--  Cooperative Game \[RS\-HL\-12\]: Application of cooperative game theory to design strategies where agents work together to avoid collisions and achieve common goals. 
--  Congestion Game \[RS\-HL\-14\]: Utilization congestion game theory to model scenarios where multiple agents interact and aim to minimize individual delays caused by congestion. 
+-  **Default Setting Sim \[RS\-HL\-13\]**: Running simulations with default settings to test the basic functionality of the multi\-agent data packet routing algorithm. 
+-  **Seqential Algorithm \[RS\-HL\-11\]**: Implementation of a sequential algorithm where agents make decisions one after another to avoid collisions. 
+-  **Cooperative Game \[RS\-HL\-12**\]: Application of cooperative game theory to design strategies where agents work together to avoid collisions and achieve common goals. 
+-  **Congestion Game \[RS\-HL\-14\]:** Utilization congestion game theory to model scenarios where multiple agents interact and aim to minimize individual delays caused by congestion. 
 
 ## Contents of RS\-HL
 1.  RS\-HL\-1: Constellation Scenario Formulation
