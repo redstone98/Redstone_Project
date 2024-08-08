@@ -1,10 +1,7 @@
 
 # **Redstone Project**
 
-**The University of Texas at Austin**
-
-
-**Department of Aerospace Engineering**
+**Aerospace Systems Engineer**
 
 
 **Hongseok Kim**
@@ -13,11 +10,14 @@
 **Last Update: 08/07/24**
 
 
+**Note:**
+
 -  Please install Satellite Communication Toolbox for running the simulation in MATLAB.  
 -  Most of the MATLAB code is designed in MATLAB livescript, and exported pdf of livescript is uploaded in most of sub\-directory for convenience. 
+-  You need minor directory changes for running several mlx files. 
 # **Project 1: RS\-LL (Low Level)**
 
-**Design Low\-Level Control Mechanism for LEO Satellite**
+**Design of Low\-Level Control Mechanism for LEO Satellite**
 
 ## Project Description
 
@@ -28,7 +28,7 @@
 
 -  To operate satellite ADCS (Attitude Determination and Control System), we need satellite orbit propagator and attitude controller. I used J2 perturbation model for orbit propagation and 3\-axis Reaction Wheels for attitude control (RS\-LL\-1 and RS\-LL\-2). 
 -  The simulation using these two algorithms is performed in RS\-LL\-3, simulating 1\-orbit simulation pointing one ground point.  
--  The detailed explanation of satellite Reaction wheel control algorim, which is momentum control by PID algorithm in Direction Cosine Matrix (Euler Angle), is described in RS\-HL\-5. 
+-  The detailed explanation of satellite Reaction wheel control algorithm, which is momentum control by PID algorithm in Direction Cosine Matrix (Euler Angle), is described in RS\-HL\-5. 
 
  **\[Application Algorithm Design\]** 
 
@@ -46,11 +46,38 @@
 
 # **Project 2: RS\-HL (High Level)**
 
-**Satellite Network Routing System Design using MDP with Cooperative Game and Congestion Game**
+**Satellite Network Routing System Design using Markov Decision Process(MDP) with Cooperative Game and Congestion Game**
 
 ## **Project Description**
 
-  In this project, communication satellite constellation is simulated via MATLAB satellite communication toolbox, and network structure design usign Markov Decision Process (MDP) is described. Also, simulation of multiple packets browsing the satellite network is performed, using 3 different data packet collision avoidance mechanism. 
+   In this project, communication satellite constellation is simulated via MATLAB satellite communication toolbox, and network routing algorithm design usign Markov Decision Process (MDP) is described.
+
+
+  Also, simulation of multiple packets browsing the satellite network is performed, using 3 different data packet collision avoidance mechanism. 
+
+
+**\[Configuration of Constellation Scenario\]**
+
+-  Orbit Design and Satellite Allocation \[RS\-HL\-1\]: 
+-  Ground Stations Configuration \[RS\-HL\-1\]: 
+-  Generate Contact 3D Chart Genration \[RS\-HL\-2\]: 
+-  Network Graph Generation \[RS\-HL\-3\]: 
+-  Analysis of the Contact \[RS\-HL\-6\]:  
+
+**\[Network routing algorithm desined by MDP\]**
+
+-  MDP simulation using matlab `createMDP` function \[RS\-HL\-4\]: 
+-  MDP\-DP algorithm description \[RS\-HL\-5\]: 
+-  MDP\-DP algorithm analysis \[RS\-HL\-7\]: 
+-  Time Varying MDP algorithm description \[RS\-HL\-9\]: 
+-  Time Varying MDP functions \[RS\-HL\-10\]: 
+
+**\[Multi\-Agent Collision Avoidance Algorithm\]**
+
+-  Default Setting Sim \[RS\-HL\-13\] 
+-  Seqential Algorithm \[RS\-HL\-11\]: 
+-  Cooperative Game \[RS\-HL\-12\]: 
+-  Congestion Game \[RS\-HL\-14\]: 
 
 ## Contents of RS\-HL
 1.  RS\-HL\-1: Constellation Scenario Formulation
