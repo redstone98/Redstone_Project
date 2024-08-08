@@ -1,13 +1,13 @@
 
 # **Redstone Project**
 
-**Aerospace Systems Engineer**
-
-
-**Hongseok Kim**
-
-
 **Last Update: 08/07/24**
+
+
+ **\[Open for Graduate Student potition of Post\-Bacc\]** 
+
+-  I'm graduating UT Austin Aerospace Engineering in December 2024, applying for Graduate Program starting for Fall 2025 
+-  If you are interested in this project and finding aerospace engineer, please contact me to this email: redstone@utexas.edu 
 
 
 **Note:**
@@ -53,7 +53,7 @@
    In this project, communication satellite constellation is simulated via MATLAB satellite communication toolbox, and network routing algorithm design usign Markov Decision Process (MDP) is described.
 
 
-  Also, simulation of multiple packets browsing the satellite network is performed, using 3 different data packet collision avoidance mechanism. 
+  Also, simulation of multiple packets browsing the satellite network is performed, using 3 different data packet collision avoidance algorithms. 
 
 
 **\[Configuration of Constellation Scenario\]**
