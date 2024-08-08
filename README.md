@@ -4,7 +4,7 @@
 **Last Update: 08/07/24**
 
 
- **\[Open for Graduate Research Assistant Postition or Post\-Bacc Position\]** 
+ **\[Open for Graduate Research Assistant or Post\-Bacc Position\]** 
 
 -  I'm graduating UT Austin Aerospace Engineering in December 2024, applying for Graduate Programs starting from Fall 2025 
 -  If you are interested in this project and finding aerospace engineer, please contact me to this email: redstone@utexas.edu 
