@@ -96,8 +96,8 @@ for time_index = time_index_vector
          MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('fail').('next_state') = state_index;
 
          % Level 6.2: Define State transition probability T (S - 1 / F - 0)
-         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('transition_probability') = 1;
-         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('fail').('transition_probability') = 0;
+         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('success').('transition_probability') = 0.8;
+         MDP.(['time' num2str(time_index)]).(['state' num2str(state_index)]).(['action' num2str(action_index)]).('fail').('transition_probability') = 0.2;
 
         end
     end

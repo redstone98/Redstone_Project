@@ -3,9 +3,9 @@ function MDP = policy_evaluation_process(MDP, time_index_vector,sat_to_sat_conta
 number_of_states = length(sat_to_sat_contact_3d_matrix(1,:,1));
 
 tolerance = 1e-1;
-max_iterations = 1000;
+max_iterations = 2000;
 Delta = inf; 
-value_iteration_count = 0;
+value_iteration_count = 1;
 
 
 t_n = max(time_index_vector);
@@ -13,6 +13,9 @@ sat_to_sat_contact_matrix =  sat_to_sat_contact_3d_matrix(:,:,t_n);
 
 while(abs(Delta) > tolerance) && (value_iteration_count < max_iterations)
     Delta_vector = zeros(number_of_states,1);
+    if rem(value_iteration_count,100) == 0
+     fprintf('Value Iteration: %d\n', value_iteration_count)
+    end
 
 
     state_value_vector = zeros(1,number_of_states);
