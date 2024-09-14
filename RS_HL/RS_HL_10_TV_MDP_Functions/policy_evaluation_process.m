@@ -3,7 +3,7 @@ function MDP = policy_evaluation_process(MDP, time_index_vector,sat_to_sat_conta
 number_of_states = length(sat_to_sat_contact_3d_matrix(1,:,1));
 
 tolerance = 1e-1;
-max_iterations = 2000;
+max_iterations = 3000;
 Delta = inf; 
 value_iteration_count = 1;
 
