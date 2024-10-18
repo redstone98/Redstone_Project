@@ -5,7 +5,7 @@ ecc = orbit_information.ecc;
 inc = orbit_information.inc;
 RAAN = orbit_information.RAAN;
 AOP = orbit_information.AOP;
-TA = 0:360/number_of_SATs:360-360/number_of_SATs;
+TA =  
 
 
 satellites_generated = satellite(scenario,...
