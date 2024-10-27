@@ -38,7 +38,7 @@ function [center,end1,end2] =  ground_pointing_from_tilt_angle(r_ecef, v_ecef, r
     % theta = atan(IQ/f); %Half of Camera View Angle (rad)
     % 
 
-    fov = 4;
+    fov = 8;
     theta = fov/180*pi/2;
 
     % Calculating OJ,gamma: Center Point
